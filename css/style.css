@@ -88,3 +88,405 @@ body {
   right: 0;
   bottom: 0;
 }
+
+.slide {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.slide-text-light {
+  background-color: grey;
+  color: white;
+}
+
+.slide-content {
+  position: relative;
+  max-width: 400px;
+}
+
+.slide-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+}
+
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+.button-primary {
+  background: #f47322;
+  color: white;
+}
+
+.button-default {
+  background-color: white;
+  color: #5f5f61;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 25px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 2px solid #f37321;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-radius: 33px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+}
+
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  width: 315px;
+}
+
+.slide-summer {
+  background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.43) 40.45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.promo {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: -20px;
+}
+
+.card {
+  flex: 50%;
+  margin: 20px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px;
+  max-width: 570px;
+  max-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.card-text-light {
+  color: white;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-top: 4px;
+  margin-bottom: 21px;
+}
+
+.card-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  max-width: 200px;
+}
+
+.card-price {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  margin-bottom: 8px;
+}
+
+.card-delivery {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+
+.delivery-week {
+  padding: 100px 0;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  position: relative;
+  width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.delivery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-tag {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 5px 10px;
+}
+
+.tag-health {
+  background: #d0fd89;
+  color: #49494f;
+}
+
+.tag-veg {
+  background: #aebc41;
+  color: white;
+}
+
+.tag-meat {
+  background: #b86b78;
+  color: white;
+}
+
+.tag-poultry {
+  background: #d68334;
+  color: white;
+}
+
+.tag-fish {
+  background: #cd6255;
+  color: white;
+}
+
+.tag-kids {
+  background: #fffdbf;
+  color: #49494f;
+}
+
+.tag-parents {
+  background: #f6fdc8;
+  color: #49494f;
+}
+
+.tag-weekend {
+  background: #fef7fe;
+  color: #49494f;
+}
+
+.section-grey {
+  background: #f6f6f6;
+}
+
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 62px;
+}
+
+.tabs-link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #49494f;
+  margin-right: 50px;
+}
+
+.tabs-link.active {
+  color: #f37321;
+}
+
+.tabs-content {
+  display: flex;
+  justify-content: space-between;
+  margin: -19px;
+}
+
+.tabs-card {
+  max-width: 270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 19px;
+}
+
+.privellege.tabs-card {
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  text-align: center;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.privellege.tabs-image {
+  margin-top: 32px;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tabs-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tabs-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+.privellege.container {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #f6f6f6;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.footer-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 50px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.social-link {
+  margin-left: 20px;
+  text-decoration: none;
+}
